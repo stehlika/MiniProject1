@@ -1,6 +1,30 @@
 ﻿module MiniProject1
 
 
+type FoodType = Salad | Sandwich | Bagel | Cake
+
+type Size = Small | Medium | Large
+
+type Food = {foodType: FoodType; size: Size; desc: string}
+
+let caesarSalad = {foodType = FoodType.Salad; size = Size.Large; desc = "Caesar"};
+let veganSalad = {foodType = FoodType.Salad; size = Size.Medium; desc = "Vegan"};
+let tunaSalad = {foodType = FoodType.Salad; size = Size.Large; desc = "Tuna"};
+
+let porkSandwich = {foodType = FoodType.Sandwich; size = Size.Medium; desc = "Pork"};
+let cheeseSteakSandwich = {foodType = FoodType.Sandwich; size = Size.Large; desc = "CheeseSteak"};
+let garlicButterSandwich = {foodType = FoodType.Sandwich; size = Size.Small; desc = "GarlicButter"};
+
+let beefBagel = {foodType = FoodType.Bagel; size = Size.Medium; desc = "Beef"};
+let eggBagel = {foodType = FoodType.Bagel; size = Size.Medium; desc = "Egg"};
+let basicBagel = {foodType = FoodType.Bagel; size = Size.Small; desc = "Basic"};
+
+let chocolateFudgeBrownieCake = {foodType = FoodType.Cake; size = Size.Medium; desc = "ChocolateFudgeBrownie"};
+let strawberyChesecake = {foodType = FoodType.Cake; size = Size.Medium; desc = "StrawberyChesecake"};
+let pumpkinPie = {foodType = FoodType.Cake; size = Size.Small; desc = "Punpkin"};
+
+
+ 
 
 
 
