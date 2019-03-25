@@ -24,7 +24,41 @@ let strawberyChesecake = {foodType = FoodType.Cake; size = Size.Medium; desc = "
 let pumpkinPie = {foodType = FoodType.Cake; size = Size.Small; desc = "Punpkin"};
 
 
- 
+
+let considerType (food: Food) =
+    match food.foodType with
+        | Salad -> 20.0
+        | Sandwich -> 25.0
+        | Bagel -> 30.0
+        | Cake -> 15.0
+      //  |_ -> 0
+        
+        
+let considerSize (food: Food) =
+    match food.size with
+        | Small -> 1.0
+        | Medium -> 1.25
+        | Large -> 1.5
+      //  |_ -> 0.0
+
+let calculatePrice (food: Food) =
+    considerType(food) * considerSize(food)
+
+calculatePrice(caesarSalad)
+calculatePrice(veganSalad)
+calculatePrice(tunaSalad)
+calculatePrice(porkSandwich)
+calculatePrice(cheeseSteakSandwich)
+calculatePrice(garlicButterSandwich)
+calculatePrice(beefBagel)
+calculatePrice(eggBagel)
+calculatePrice(chocolateFudgeBrownieCake)
+calculatePrice(strawberyChesecake)
+calculatePrice(pumpkinPie)
+
+let kvittering = calculatePrice(veganSalad) + calculatePrice(garlicButterSandwich) + calculatePrice(chocolateFudgeBrownieCake)
+
+printf "You have to pay: {0}", kvittering
 
 
 
@@ -40,10 +74,8 @@ let main argv =
 /// You need to go to the canteen to get the details.
 /// For instance, salad,sandwich,andcaketogether with their corresponding
 /// sizes (maybe Small, Medium and Large) and prices.
-/// You should have at least:
-/// 3different kinds of salad
-/// 3different kinds of sandwich
-/// 3different kinds of cake
+
+
 /// You will be calculating the different prices for theabove food
 /// itemsdepending on thetypeand size.
 /// Phase 1:
