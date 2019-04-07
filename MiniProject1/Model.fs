@@ -118,24 +118,24 @@ module internal String =
         gather 0 0
         values.ToArray()
 
-//let examples =
-//    let order1 = {
-//        Food = getFood "salad"
-//        Size = getSize "l"
-//        Extra = getExtra "bag"
-//    }
-//
-//    printfn "%A" (printPrice order1)
-//
-//    printfn "%A" (buy "salad" "m" "")
-//
-//    orderLoop.Post(Order("cake", "l", "wrap"))
-//    orderLoop.Post(Order("sandwich", "m", "wrhtr"))
-//    orderLoop.Post(Order("salad", "l", "bag"))
-//    orderLoop.Post(Comment("Delicious Salad :3"))
-//    orderLoop.Post(Order("salad", "s", ""))
-//    orderLoop.Post(Order("sandwich", "m", "cutlery"))
-//    orderLoop.Post(End)
+let examples =
+    let order1 = {
+        Food = getFood "salad"
+        Size = getSize "l"
+        Extra = getExtra "bag"
+    }
+
+    printfn "%A" (printPrice order1)
+
+    printfn "%A" (buy "salad" "m" "")
+
+    orderLoop.Post(Order("cake", "l", "wrap"))
+    orderLoop.Post(Order("sandwich", "m", "wrhtr"))
+    orderLoop.Post(Order("salad", "l", "bag"))
+    orderLoop.Post(Comment("Delicious Salad :3"))
+    orderLoop.Post(Order("salad", "s", ""))
+    orderLoop.Post(Order("sandwich", "m", "cutlery"))
+    orderLoop.Post(End)
 
 let canteenSystem =
     printfn "Accepted commands:"
@@ -165,7 +165,7 @@ let canteenSystem =
     innerLoop()
 
 let run =
-//    examples
+    examples
 
     canteenSystem
     0

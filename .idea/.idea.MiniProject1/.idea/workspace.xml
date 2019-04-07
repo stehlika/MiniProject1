@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9b6fc108-d97e-4ec9-abfd-589a9cb72aab" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/MiniProject1/Model.fs" beforeDir="false" afterPath="$PROJECT_DIR$/MiniProject1/Model.fs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiniProject1/Program.fs" beforeDir="false" afterPath="$PROJECT_DIR$/MiniProject1/Program.fs" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MiniProject1/Program.fs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <marker date="1554659469979" expanded="true" signature="27:94" ph=" ..." />
+                <marker date="1554659469979" expanded="true" signature="57:94" ph=" =  ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MiniProject1/Model.fs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
+              <folding>
+                <marker date="1554659469922" expanded="true" signature="25:4479" ph=" ..." />
+                <marker date="1554659469922" expanded="true" signature="164:246" ph="= ..." />
+                <marker date="1554659469922" expanded="true" signature="170:246" ph="{ ..." />
+                <marker date="1554659469922" expanded="true" signature="266:350" ph=" = ..." />
+                <marker date="1554659469922" expanded="true" signature="288:350" ph=" ..." />
+                <marker date="1554659469922" expanded="true" signature="375:457" ph=" = ..." />
+                <marker date="1554659469922" expanded="true" signature="397:457" ph=" ..." />
+                <marker date="1554659469922" expanded="true" signature="479:595" ph=" = ..." />
+                <marker date="1554659469922" expanded="true" signature="502:595" ph=" ..." />
+                <marker date="1554659469922" expanded="true" signature="617:697" ph=" = ..." />
+                <marker date="1554659469922" expanded="true" signature="716:811" ph=" = ..." />
+                <marker date="1554659469922" expanded="true" signature="738:811" ph=" ..." />
+                <marker date="1554659469922" expanded="true" signature="827:935" ph=" = ..." />
+                <marker date="1554659469922" expanded="true" signature="847:935" ph=" ..." />
+                <marker date="1554659469922" expanded="true" signature="954:1047" ph=" = ..." />
+                <marker date="1554659469922" expanded="true" signature="976:1047" ph=" ..." />
+                <marker date="1554659469922" expanded="true" signature="1063:1156" ph=" = ..." />
+                <marker date="1554659469922" expanded="true" signature="1083:1156" ph=" ..." />
+                <marker date="1554659469922" expanded="true" signature="1177:1306" ph=" = ..." />
+                <marker date="1554659469922" expanded="true" signature="1201:1306" ph=" ..." />
+                <marker date="1554659469922" expanded="true" signature="1323:1462" ph=" = ..." />
+                <marker date="1554659469922" expanded="true" signature="1343:1462" ph=" ..." />
+                <marker date="1554659469922" expanded="true" signature="1484:1765" ph=" = ..." />
+                <marker date="1554659469922" expanded="true" signature="1513:1765" ph=" ..." />
+                <marker date="1554659469922" expanded="true" signature="1780:1896" ph=" = ..." />
+                <marker date="1554659469922" expanded="true" signature="1792:1879" ph=" = { ..." />
+                <marker date="1554659469922" expanded="true" signature="1918:1993" ph="= ..." />
+                <marker date="1554659469922" expanded="true" signature="1924:1993" ph="| Order of string * string * string ..." />
+                <marker date="1554659469922" expanded="true" signature="2008:2481" ph=" = ..." />
+                <marker date="1554659469922" expanded="true" signature="2078:2475" ph=" -&gt; ..." />
+                <marker date="1554659469922" expanded="true" signature="2111:2456" ph=" = ..." />
+                <marker date="1554659469922" expanded="true" signature="2150:2455" ph=" ..." />
+                <marker date="1554659469922" expanded="true" signature="2234:2442" ph=" ..." />
+                <marker date="1554659469922" expanded="true" signature="2505:3057" ph=" = ..." />
+                <marker date="1554659469922" expanded="true" signature="2544:3057" ph=" = ..." />
+                <marker date="1554659469922" expanded="true" signature="2615:2889" ph=" = ..." />
+                <marker date="1554659469922" expanded="true" signature="2713:2889" ph=" then add() ..." />
+                <marker date="1554659469922" expanded="true" signature="2753:2889" ph=" then inQuotes start (i + 1) ..." />
+                <marker date="1554659469922" expanded="true" signature="2816:2889" ph=" then add(); gather (i + 1) (i + 1) ..." />
+                <marker date="1554659469922" expanded="true" signature="2918:3013" ph=" = ..." />
+                <marker date="1554659469922" expanded="true" signature="2947:3013" ph=" then gather start (i + 1) ..." />
+                <marker date="1554659469922" expanded="true" signature="3071:3583" ph=" = ..." />
+                <marker date="1554659469922" expanded="true" signature="3088:3187" ph=" = { ..." />
+                <marker date="1554659469922" expanded="true" signature="3602:4430" ph=" = ..." />
+                <marker date="1554659469922" expanded="true" signature="3878:4124" ph=" = ..." />
+                <marker date="1554659469922" expanded="true" signature="4009:4124" ph=" ..." />
+                <marker date="1554659469922" expanded="true" signature="4160:4414" ph=" = ..." />
+                <marker date="1554659469922" expanded="true" signature="4278:4414" ph=" ..." />
+                <marker date="1554659469922" expanded="true" signature="4439:4479" ph=" = ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MiniProject1/packages.config">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MiniProject1/AssemblyInfo.fs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1553585416221" expanded="false" signature="42:132" ph="..." />
+                <marker date="1553585416221" expanded="true" signature="134:321" ph="// General Information about an assembly is controlled through the following  ..." />
+                <marker date="1553585416221" expanded="true" signature="334:1458" ph="AssemblyTitle(&quot;MiniProject1&quot;)&gt;] ..." />
+                <marker date="1553585416221" expanded="true" signature="650:860" ph="// Setting ComVisible to false makes the types in this assembly not visible  ..." />
+                <marker date="1553585416221" expanded="true" signature="1039:1374" ph="// Version information for an assembly consists of the following four values: ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/MiniProject1/Program.fs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MiniProject1/AssemblyInfo.fs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MiniProject1/packages.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MiniProject1/Model.fs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/MiniProject1/Program.fs" />
+        <option value="$PROJECT_DIR$/MiniProject1/Model.fs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="260" />
+    <option name="y" value="53" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MiniProject1" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MiniProject1" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MiniProject1" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="SolutionBuilderGeneralOptionsPageId" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/MiniProject1/bin/Debug/MiniProject1.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MiniProject1/bin/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/MiniProject1/MiniProject1.fsproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.7.1" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9b6fc108-d97e-4ec9-abfd-589a9cb72aab" name="Default Changelist" comment="" />
+      <created>1553585456121</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553585456121</updated>
+      <workItem from="1553585459131" duration="1346000" />
+      <workItem from="1554648156742" duration="5375000" />
+      <workItem from="1554659131361" duration="89000" />
+      <workItem from="1554659412366" duration="247000" />
+    </task>
+    <task id="LOCAL-00001" summary="Created new Model file containing types for modular foods and sizes with logic for calculating the price and printing out the result">
+      <created>1554650716027</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1554650716028</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Implemented optional functionality for adding extras">
+      <created>1554651689201</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1554651689201</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Implemented a buy function which places a order from given strings and returns a price comment">
+      <created>1554653638895</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1554653638895</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Implemented initial MailboxProcessor with some buy calls">
+      <created>1554656078813</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1554656078813</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Implemented comment functionality">
+      <created>1554656288552</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1554656288552</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Implemented super basic command interpreter">
+      <created>1554658907779</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1554658907779</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Cosmetic edit xD">
+      <created>1554659155743</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1554659155743</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="7057000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="27" width="1920" height="1053" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1398079" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Errors In Solution" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created new Model file containing types for modular foods and sizes with logic for calculating the price and printing out the result" />
+    <MESSAGE value="Implemented optional functionality for adding extras" />
+    <MESSAGE value="Implemented a buy function which places a order from given strings and returns a price comment" />
+    <MESSAGE value="Implemented initial MailboxProcessor with some buy calls" />
+    <MESSAGE value="Implemented comment functionality" />
+    <MESSAGE value="Implemented super basic command interpreter" />
+    <MESSAGE value="Cosmetic edit xD" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cosmetic edit xD" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/MiniProject1/packages.config">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MiniProject1/AssemblyInfo.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1553585416221" expanded="false" signature="42:132" ph="..." />
+            <marker date="1553585416221" expanded="true" signature="134:321" ph="// General Information about an assembly is controlled through the following  ..." />
+            <marker date="1553585416221" expanded="true" signature="334:1458" ph="AssemblyTitle(&quot;MiniProject1&quot;)&gt;] ..." />
+            <marker date="1553585416221" expanded="true" signature="650:860" ph="// Setting ComVisible to false makes the types in this assembly not visible  ..." />
+            <marker date="1553585416221" expanded="true" signature="1039:1374" ph="// Version information for an assembly consists of the following four values: ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MiniProject1/Program.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <marker date="1554659469979" expanded="true" signature="27:94" ph=" ..." />
+            <marker date="1554659469979" expanded="true" signature="57:94" ph=" =  ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MiniProject1/Model.fs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
+          <folding>
+            <marker date="1554659469922" expanded="true" signature="25:4479" ph=" ..." />
+            <marker date="1554659469922" expanded="true" signature="164:246" ph="= ..." />
+            <marker date="1554659469922" expanded="true" signature="170:246" ph="{ ..." />
+            <marker date="1554659469922" expanded="true" signature="266:350" ph=" = ..." />
+            <marker date="1554659469922" expanded="true" signature="288:350" ph=" ..." />
+            <marker date="1554659469922" expanded="true" signature="375:457" ph=" = ..." />
+            <marker date="1554659469922" expanded="true" signature="397:457" ph=" ..." />
+            <marker date="1554659469922" expanded="true" signature="479:595" ph=" = ..." />
+            <marker date="1554659469922" expanded="true" signature="502:595" ph=" ..." />
+            <marker date="1554659469922" expanded="true" signature="617:697" ph=" = ..." />
+            <marker date="1554659469922" expanded="true" signature="716:811" ph=" = ..." />
+            <marker date="1554659469922" expanded="true" signature="738:811" ph=" ..." />
+            <marker date="1554659469922" expanded="true" signature="827:935" ph=" = ..." />
+            <marker date="1554659469922" expanded="true" signature="847:935" ph=" ..." />
+            <marker date="1554659469922" expanded="true" signature="954:1047" ph=" = ..." />
+            <marker date="1554659469922" expanded="true" signature="976:1047" ph=" ..." />
+            <marker date="1554659469922" expanded="true" signature="1063:1156" ph=" = ..." />
+            <marker date="1554659469922" expanded="true" signature="1083:1156" ph=" ..." />
+            <marker date="1554659469922" expanded="true" signature="1177:1306" ph=" = ..." />
+            <marker date="1554659469922" expanded="true" signature="1201:1306" ph=" ..." />
+            <marker date="1554659469922" expanded="true" signature="1323:1462" ph=" = ..." />
+            <marker date="1554659469922" expanded="true" signature="1343:1462" ph=" ..." />
+            <marker date="1554659469922" expanded="true" signature="1484:1765" ph=" = ..." />
+            <marker date="1554659469922" expanded="true" signature="1513:1765" ph=" ..." />
+            <marker date="1554659469922" expanded="true" signature="1780:1896" ph=" = ..." />
+            <marker date="1554659469922" expanded="true" signature="1792:1879" ph=" = { ..." />
+            <marker date="1554659469922" expanded="true" signature="1918:1993" ph="= ..." />
+            <marker date="1554659469922" expanded="true" signature="1924:1993" ph="| Order of string * string * string ..." />
+            <marker date="1554659469922" expanded="true" signature="2008:2481" ph=" = ..." />
+            <marker date="1554659469922" expanded="true" signature="2078:2475" ph=" -&gt; ..." />
+            <marker date="1554659469922" expanded="true" signature="2111:2456" ph=" = ..." />
+            <marker date="1554659469922" expanded="true" signature="2150:2455" ph=" ..." />
+            <marker date="1554659469922" expanded="true" signature="2234:2442" ph=" ..." />
+            <marker date="1554659469922" expanded="true" signature="2505:3057" ph=" = ..." />
+            <marker date="1554659469922" expanded="true" signature="2544:3057" ph=" = ..." />
+            <marker date="1554659469922" expanded="true" signature="2615:2889" ph=" = ..." />
+            <marker date="1554659469922" expanded="true" signature="2713:2889" ph=" then add() ..." />
+            <marker date="1554659469922" expanded="true" signature="2753:2889" ph=" then inQuotes start (i + 1) ..." />
+            <marker date="1554659469922" expanded="true" signature="2816:2889" ph=" then add(); gather (i + 1) (i + 1) ..." />
+            <marker date="1554659469922" expanded="true" signature="2918:3013" ph=" = ..." />
+            <marker date="1554659469922" expanded="true" signature="2947:3013" ph=" then gather start (i + 1) ..." />
+            <marker date="1554659469922" expanded="true" signature="3071:3583" ph=" = ..." />
+            <marker date="1554659469922" expanded="true" signature="3088:3187" ph=" = { ..." />
+            <marker date="1554659469922" expanded="true" signature="3602:4430" ph=" = ..." />
+            <marker date="1554659469922" expanded="true" signature="3878:4124" ph=" = ..." />
+            <marker date="1554659469922" expanded="true" signature="4009:4124" ph=" ..." />
+            <marker date="1554659469922" expanded="true" signature="4160:4414" ph=" = ..." />
+            <marker date="1554659469922" expanded="true" signature="4278:4414" ph=" ..." />
+            <marker date="1554659469922" expanded="true" signature="4439:4479" ph=" = ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
