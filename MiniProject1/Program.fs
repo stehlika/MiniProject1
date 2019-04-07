@@ -1,4 +1,4 @@
-﻿module MiniProject1
+﻿module MiniProject1.Program
 
 
 type FoodType = Salad | Sandwich | Bagel | Cake
@@ -64,7 +64,8 @@ printf "You have to pay: {0}", kvittering
 
 [<EntryPoint>]
 let main argv = 
-    printfn "%A" argv
+    Model.run
+    |> ignore
     0 // return an integer exit code
 
 
