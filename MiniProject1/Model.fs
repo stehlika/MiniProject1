@@ -96,32 +96,79 @@ let orderLoop =
             async {
                 let! eventMsg = inbox.Receive()
                 match eventMsg with
-                | Order(t, s, e) ->return! innerLoop (printfn "%A" (buy t s e))
+                | Order(t, s, e) -> return! innerLoop (printfn "%A" (buy t s e))
                 | Comment s -> return! innerLoop (printfn "%A" s)
                 | End -> printfn "Service end..."; return ()
             }
        innerLoop()
     )
 
+module internal String =
+    let split separator (s : string) =
+        let values = ResizeArray<_>()
+        let rec gather start i =
+            let add() = s.Substring(start, i - start) |> values.Add
+            if i = s.Length then add()
+            elif s.[i] = '"' then inQuotes start (i + 1)
+            elif s.[i] = separator then add(); gather (i + 1) (i + 1)
+            else gather start (i + 1)
+        and inQuotes start i =
+            if s.[i] = '"' then gather start (i + 1)
+            else inQuotes start (i + 1)
+        gather 0 0
+        values.ToArray()
+
+//let examples =
+//    let order1 = {
+//        Food = getFood "salad"
+//        Size = getSize "l"
+//        Extra = getExtra "bag"
+//    }
+//
+//    printfn "%A" (printPrice order1)
+//
+//    printfn "%A" (buy "salad" "m" "")
+//
+//    orderLoop.Post(Order("cake", "l", "wrap"))
+//    orderLoop.Post(Order("sandwich", "m", "wrhtr"))
+//    orderLoop.Post(Order("salad", "l", "bag"))
+//    orderLoop.Post(Comment("Delicious Salad :3"))
+//    orderLoop.Post(Order("salad", "s", ""))
+//    orderLoop.Post(Order("sandwich", "m", "cutlery"))
+//    orderLoop.Post(End)
+
+let canteenSystem =
+    printfn "Accepted commands:"
+    printfn "buy <type> <size> [<extra>]"
+    printfn "end"
+    printfn "Allowed entries: "
+    printfn "<type>: cake, salad, sandwich"
+    printfn "<size>: s, m, l"
+    printfn "<extra>: wrap, bag, cutlery"
+    printfn ""
+    let evalBuy s =
+        let split = String.split ' ' s
+        let Type = split.[1]
+        let Size = split.[2]
+        match split.Length with
+        | 4 -> orderLoop.Post(Order (Type, Size, split.[3]))
+        | 3 -> orderLoop.Post(Order (Type, Size, ""))
+        
+    let rec innerLoop func =
+        func
+        let c = Console.ReadLine()
+        let split = String.split ' ' c
+        match split.[0] with
+        | "buy" -> innerLoop(evalBuy c |> ignore)
+        | "end" -> ()
+        | _ -> innerLoop(printfn "Wrong command, try again...")
+    innerLoop()
+
 let run =
-    let order1 = {
-        Food = getFood "salad"
-        Size = getSize "l"
-        Extra = getExtra "bag"
-    }
+//    examples
 
-    printfn "%A" (printPrice order1)
+    canteenSystem
 
-    printfn "%A" (buy "salad" "m" "")
-
-    orderLoop.Post(Order("cake", "l", "wrap"))
-    orderLoop.Post(Order("sandwich", "m", "wrhtr"))
-    orderLoop.Post(Order("salad", "l", "bag"))
-    orderLoop.Post(Comment("Delicious Salad :3"))
-    orderLoop.Post(Order("salad", "s", ""))
-    orderLoop.Post(Order("sandwich", "m", "cutlery"))
-    orderLoop.Post(End)
-    
     Console.ReadKey()
     |> ignore
     0
