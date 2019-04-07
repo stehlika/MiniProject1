@@ -4,10 +4,13 @@ type food = | Cake | Sandwich | Salad
 
 type size = | Small | Medium | Large
 
+type extra = | Wrap | Bag | Cutlery
+
 type order =
     {
         Food : food
         Size : size
+        Extra : extra option
     }
 
 let basePrice food =
@@ -22,8 +25,13 @@ let sizeMyltiplier size =
     | Medium -> 1.0
     | Large -> 1.25
 
+let extraPrice addon =
+    match addon with
+    | Some a -> (match a with | Wrap -> 2.5 | Bag -> 5.0 | Cutlery -> 1.0)
+    | None -> 0.0
+
 let orderPrice order =
-    basePrice order.Food * sizeMyltiplier order.Size
+    basePrice order.Food * sizeMyltiplier order.Size + extraPrice order.Extra
 
 let foodName food =
     match food with
@@ -48,30 +56,47 @@ let getSize id =
     | "s" -> size.Small
     | "m" -> size.Medium
     | "l" -> size.Large
-    
+
+let extraName extra =
+     match extra with
+     | Some a -> (match a with | Wrap -> "Wrap" | Bag -> "Bag" | Cutlery -> "Cutlery")
+     | None -> ""
+
+let getExtra id =
+    match id with
+    | "wrap" -> extra.Wrap
+    | "bag" -> extra.Bag
+    | "cutlery" -> extra.Cutlery
+
 let printPrice order =
-    sprintf "Price of %s %s: %A" (sizeName order.Size)(foodName order.Food)(orderPrice order)
+    match order.Extra with
+    | Some s -> sprintf "Price of %s %s with extra %s: %A" (sizeName order.Size) (foodName order.Food) (extraName order.Extra) (orderPrice order)
+    | None -> sprintf "Price of %s %s: %A" (sizeName order.Size) (foodName order.Food) (orderPrice order)
 
 let run =
     let order1 = {
         Food = getFood "salad"
         Size = getSize "l"
+        Extra = Some(getExtra "bag")
     }
      let order2 = {
         Food = getFood "cake"
         Size = getSize "s"
+        Extra = None
     }
       let order3 = {
         Food = getFood "sandwich"
         Size = getSize "m"
+        Extra = None
     }
        let order4 = {
         Food = getFood "cake"
         Size = getSize "l"
+        Extra = Some(getExtra "cutlery")
     }
     printfn "%A" (printPrice order1)
     printfn "%A" (printPrice order2)
     printfn "%A" (printPrice order3)
     printfn "%A" (printPrice order4)
-    
+
     0
