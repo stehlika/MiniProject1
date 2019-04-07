@@ -83,8 +83,9 @@ let buy t s e =
     }
     printPrice o
 
-type eventMsg =
-    | Buy of string * string * string
+type CanteenMessage =
+    | Order of string * string * string
+    | Comment of string
     | End
 
 let orderLoop =
@@ -95,7 +96,8 @@ let orderLoop =
             async {
                 let! eventMsg = inbox.Receive()
                 match eventMsg with
-                | Buy(t, s, e) ->return! innerLoop (printfn "%A" (buy t s e)) 
+                | Order(t, s, e) ->return! innerLoop (printfn "%A" (buy t s e))
+                | Comment s -> return! innerLoop (printfn "%A" s)
                 | End -> printfn "Service end..."; return ()
             }
        innerLoop()
@@ -112,11 +114,12 @@ let run =
 
     printfn "%A" (buy "salad" "m" "")
 
-    orderLoop.Post(Buy("cake", "l", "wrap"))
-    orderLoop.Post(Buy("sandwich", "m", "wrhtr"))
-    orderLoop.Post(Buy("salad", "l", "bag"))
-    orderLoop.Post(Buy("salad", "s", ""))
-    orderLoop.Post(Buy("sandwich", "m", "cutlery"))
+    orderLoop.Post(Order("cake", "l", "wrap"))
+    orderLoop.Post(Order("sandwich", "m", "wrhtr"))
+    orderLoop.Post(Order("salad", "l", "bag"))
+    orderLoop.Post(Comment("Delicious Salad :3"))
+    orderLoop.Post(Order("salad", "s", ""))
+    orderLoop.Post(Order("sandwich", "m", "cutlery"))
     orderLoop.Post(End)
     
     Console.ReadKey()
