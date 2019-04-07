@@ -64,20 +64,30 @@ let extraName extra =
 
 let getExtra id =
     match id with
-    | "wrap" -> extra.Wrap
-    | "bag" -> extra.Bag
-    | "cutlery" -> extra.Cutlery
+    | "wrap" -> Some(extra.Wrap)
+    | "bag" -> Some(extra.Bag)
+    | "cutlery" -> Some(extra.Cutlery)
+    | _ -> None
 
 let printPrice order =
     match order.Extra with
     | Some s -> sprintf "Price of %s %s with extra %s: %A" (sizeName order.Size) (foodName order.Food) (extraName order.Extra) (orderPrice order)
     | None -> sprintf "Price of %s %s: %A" (sizeName order.Size) (foodName order.Food) (orderPrice order)
 
+let buy t s e =
+    let o = {
+        Food = getFood t
+        Size = getSize s
+        Extra = getExtra e
+    }
+    printPrice o
+
+
 let run =
     let order1 = {
         Food = getFood "salad"
         Size = getSize "l"
-        Extra = Some(getExtra "bag")
+        Extra = getExtra "bag"
     }
      let order2 = {
         Food = getFood "cake"
@@ -87,16 +97,17 @@ let run =
       let order3 = {
         Food = getFood "sandwich"
         Size = getSize "m"
-        Extra = None
+        Extra = getExtra "invalid"
     }
        let order4 = {
         Food = getFood "cake"
         Size = getSize "l"
-        Extra = Some(getExtra "cutlery")
+        Extra = getExtra "cutlery"
     }
     printfn "%A" (printPrice order1)
     printfn "%A" (printPrice order2)
     printfn "%A" (printPrice order3)
     printfn "%A" (printPrice order4)
 
+    printfn "%A" (buy "salad" "m" "")
     0
