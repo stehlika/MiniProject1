@@ -168,7 +168,4 @@ let run =
 //    examples
 
     canteenSystem
-
-    Console.ReadKey()
-    |> ignore
     0
