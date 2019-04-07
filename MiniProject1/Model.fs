@@ -1,4 +1,5 @@
 module MiniProject1.Model
+open System
 
 type food = | Cake | Sandwich | Salad
 
@@ -82,6 +83,23 @@ let buy t s e =
     }
     printPrice o
 
+type eventMsg =
+    | Buy of string * string * string
+    | End
+
+let orderLoop =
+    printfn "Service start..."
+    MailboxProcessor.Start(fun inbox ->
+       let rec innerLoop func =
+            func
+            async {
+                let! eventMsg = inbox.Receive()
+                match eventMsg with
+                | Buy(t, s, e) ->return! innerLoop (printfn "%A" (buy t s e)) 
+                | End -> printfn "Service end..."; return ()
+            }
+       innerLoop()
+    )
 
 let run =
     let order1 = {
@@ -89,25 +107,18 @@ let run =
         Size = getSize "l"
         Extra = getExtra "bag"
     }
-     let order2 = {
-        Food = getFood "cake"
-        Size = getSize "s"
-        Extra = None
-    }
-      let order3 = {
-        Food = getFood "sandwich"
-        Size = getSize "m"
-        Extra = getExtra "invalid"
-    }
-       let order4 = {
-        Food = getFood "cake"
-        Size = getSize "l"
-        Extra = getExtra "cutlery"
-    }
+
     printfn "%A" (printPrice order1)
-    printfn "%A" (printPrice order2)
-    printfn "%A" (printPrice order3)
-    printfn "%A" (printPrice order4)
 
     printfn "%A" (buy "salad" "m" "")
+
+    orderLoop.Post(Buy("cake", "l", "wrap"))
+    orderLoop.Post(Buy("sandwich", "m", "wrhtr"))
+    orderLoop.Post(Buy("salad", "l", "bag"))
+    orderLoop.Post(Buy("salad", "s", ""))
+    orderLoop.Post(Buy("sandwich", "m", "cutlery"))
+    orderLoop.Post(End)
+    
+    Console.ReadKey()
+    |> ignore
     0
